@@ -32,5 +32,11 @@ for row_idx in range(3):
         print(f'[{row_idx}, {col_idx}] = {m[row_idx][col_idx]}')
 print('='*80)
 
+print(len(m))
+print(len(m[0]))
+print(len(m[1]))
+print(len(m[2]))
+print('='*80)
+
 
 
