@@ -98,8 +98,37 @@ for t in enumerate(data):
 
 for idx, el in enumerate(data):
     print(idx, el)
+print('-'*80)
+
+m = [
+    [0,1],
+    [2,3,4,5,6],
+    [7,8,9],
+    [10]
+]
+for row_idx in range(len(m)):
+    for col_idx in range(len(m[row_idx])):
+        print(f'[{row_idx}, {col_idx}] = {m[row_idx][col_idx]}')
 print()
 
+for row in m:
+    for element in row:
+        print(element)
+for row_idx in range(len(m)):
+    for col_idx in range(len(m[row_idx])):
+        print(m[row_idx][col_idx])
+print()
 
+for row_idx, row in enumerate(m):
+    print(row_idx, row)
 
+for row_idx, row in enumerate(m):
+    for col_idx, element in enumerate(row):
+        print(row_idx, col_idx, element)
+print()
+
+for row_idx, row in enumerate(m):
+    for col_idx, element in enumerate(row):
+        print(f'[{row_idx}, {col_idx}] = {element}')
+print()
 
