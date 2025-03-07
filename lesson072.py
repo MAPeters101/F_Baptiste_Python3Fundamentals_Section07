@@ -217,6 +217,20 @@ average = fmean(val for val in data if val is not None)
 print(average)
 data = [val if val is not None else average for val in data]
 print(data)
+print('='*80)
 
 
+data = [10.5, 11.2, 9.8, None, 11.5, None]
+print(data)
+average = fmean(val for val in data if val is not None)
+print(average)
+data2 = [val if val is not None else average for val in data]
+print(data2)
 
+print('+'*80)
+import pandas as pd
+data = [10.5, 11.2, 9.8, None, 11.5, None]
+print(data)
+df = pd.DataFrame(data)
+df.fillna(df.mean(), inplace=True)
+print(df[0].tolist())
