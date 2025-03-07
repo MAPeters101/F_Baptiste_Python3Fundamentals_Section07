@@ -207,3 +207,16 @@ total = sum(val for val in data if val is not None)
 average = total / count
 data = [val if val is not None else average for val in data]
 print(data)
+print('='*80)
+
+
+from statistics import fmean
+data = [10.5, 11.2, 9.8, None, 11.5, None]
+print(data)
+average = fmean(val for val in data if val is not None)
+print(average)
+data = [val if val is not None else average for val in data]
+print(data)
+
+
+
