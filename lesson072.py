@@ -158,6 +158,10 @@ for i in range(len(data)):
 print(data)
 print('- '*40)
 
-
-
+data = [10.5, 11.2, 9.8, None, 11.5, None]
+print(data)
+for index, val in enumerate(data):
+    if val is None:
+        data[index] = average
+print(data)
 
