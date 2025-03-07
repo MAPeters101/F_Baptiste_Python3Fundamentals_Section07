@@ -164,4 +164,43 @@ for index, val in enumerate(data):
     if val is None:
         data[index] = average
 print(data)
+print('- '*40)
+
+data = [10.5, 11.2, 9.8, None, 11.5, None]
+print(data)
+count = 0
+total = 0
+for i in range(len(data)):
+    if data[i] is not None:
+        count = count + 1
+        total = total + data[i]
+average = total/count
+print(average)
+for i in range(len(data)):
+    if data[i] is None:
+        data[i] = average
+print(data)
+print('- '*40)
+
+
+data = [10.5, 11.2, 9.8, None, 11.5, None]
+print(data)
+count = 0
+total = 0
+for val in data:
+    if val is not None:
+        count += 1
+        total += val
+average = total/count
+print(average)
+for index, val in enumerate(data):
+    if val is None:
+        data[index] = average
+print(data)
+print('- '*40)
+
+
+
+
+
 
