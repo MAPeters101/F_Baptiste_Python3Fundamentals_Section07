@@ -84,6 +84,22 @@ for row_idx in range(n):
             row.append(0)
     matrix.append(row)
 print(matrix)
+print('-'*80)
+
+data = [10, 20, 30]
+print(enumerate(data))
+print(list(enumerate(data)))
+for t in enumerate(data):
+    print(t)
+
+for t in enumerate(data):
+    idx, el = t
+    print(idx, el)
+
+for idx, el in enumerate(data):
+    print(idx, el)
+print()
+
 
 
 
