@@ -19,8 +19,11 @@ print('-'*80)
 #     price += 1
 # print('Done')
 
-
-
+data = [100, 200, 300, 400, 500]
+while len(data) > 0:
+    last_element = data.pop()
+    print(f'Processing element: {last_element}')
+    print(data)
 
 
 
