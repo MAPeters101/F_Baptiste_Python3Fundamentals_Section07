@@ -24,9 +24,17 @@ while len(data) > 0:
     last_element = data.pop()
     print(f'Processing element: {last_element}')
     print(data)
+print('-'*80)
 
 
-
+data = [100, 200, 300, 400, 500]
+for i in range(len(data)):
+    print(f'i = {i}')
+    print(f'before removing element: data = {data}')
+    element = data.pop(i)
+    print(f'Processing element: {element}')
+    print(f'after removing element: data = {data}')
+    print('-'*10)
 
 print('-'*80)
 
