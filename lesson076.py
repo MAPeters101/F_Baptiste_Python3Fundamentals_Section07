@@ -43,5 +43,30 @@ while True:
     if i > 5:
         break
     print(i)
+print('-'*80)
+
+
+data = [1,2,3,-4,5,6]
+all_positive = True
+for element in data:
+    if element <= 0:
+        all_positive = False
+        break
+
+if all_positive:
+    print('Processing all positive elements')
+print('--')
+
+data = [1,2,3,4,5,6]
+all_positive = True
+for element in data:
+    if element <= 0:
+        all_positive = False
+        break
+
+if all_positive:
+    print('Processing all positive elements')
+
+
 
 
