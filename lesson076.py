@@ -25,6 +25,18 @@ for i in range(1, 5):
             continue
         print(f'adding numbers: {i} + {j} = {i + j}')
     print('-'*10)
+print()
+
+
+for i in range(1, 4):
+    for j in range(1, 4):
+        if j >= 3:
+            break
+        print(i, j)
+    print('-'*10)
+print()
+
+
 
 
 
