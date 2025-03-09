@@ -6,5 +6,13 @@ for i in range(100):
 print('done')
 print()
 
+for i in range(1, 11):
+    if i % 2 == 1:
+        continue
+    print(i)
+print()
+
+
+
 
 
