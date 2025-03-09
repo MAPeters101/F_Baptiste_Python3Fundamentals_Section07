@@ -66,7 +66,22 @@ for element in data:
 
 if all_positive:
     print('Processing all positive elements')
+print('-'*80)
 
+
+for i in range(5):
+    print(i)
+else:  # no break
+    print('loop terminated normally (no break)')
+
+
+for i in range(5):
+    print(i)
+    if i > 3:
+        break
+else:  # no break
+    print('loop terminated normally (no break)')
+print()
 
 
 
